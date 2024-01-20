@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import { signUp } from "@/app/(auth)/auth-helpers"; // Assuming there's a signUp function
-import useFormHandler from "@/hooks/auth/useFormHandler";
 
 const SignUp: React.FC = () => {
-  const { isWaiting, errorMessage, handleSubmit } = useFormHandler(signUp);
+  const [isWaiting, setIsWaiting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   return (
     <div className="mx-auto max-w-6xl bg-white p-4 md:p-6 md:py-16">
@@ -12,10 +11,18 @@ const SignUp: React.FC = () => {
         Sign Up for Potential
       </h1>
 
-      <h2 className=" mb-6 flex justify-center"
-      > We’re currently in a limited beta. Please use the form below to speak to a member of our team</h2>
+      <h2 className=" mb-6 flex justify-center">
+        {" "}
+        We’re currently in a limited beta. Please use the form below to speak to
+        a member of our team
+      </h2>
 
-      <form onSubmit={handleSubmit} className="space-y-4 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto">
+      <form
+        onSubmit={(e) => {
+          console.log(e);
+        }}
+        className="space-y-4 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto"
+      >
         <div className="flex flex-col mb-4">
           <input
             type="text"
