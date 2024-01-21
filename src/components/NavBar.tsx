@@ -21,14 +21,13 @@ const NavBar: React.FC = () => {
             </Link>
           </div>
 
-          {/* Regular Menu Items (visible on medium and larger screens) */}
           <div className="hidden items-center space-x-4 md:flex">
-            <Link
-              href="/staff"
+            {/* <Link
+              href="/"
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900"
             >
-              Staff
-            </Link>
+              Go Somewhere Else
+            </Link> */}
           </div>
         </div>
       </div>
