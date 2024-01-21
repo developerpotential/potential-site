@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { handleLeadGenForm } from "@/(lead-gen)/SendLeadGenForm";
 
 const SignUp: React.FC = () => {
   const [isWaiting, setIsWaiting] = useState(false);
@@ -12,15 +13,13 @@ const SignUp: React.FC = () => {
       </h1>
 
       <h2 className=" mb-6 flex justify-center">
-        {" "}
-        We’re currently in a limited beta. Please use the form below to speak to
-        a member of our team
+        {
+          "We're currently in a limited beta. Please use the form below to speak to a member of our team"
+        }
       </h2>
 
       <form
-        onSubmit={(e) => {
-          console.log(e);
-        }}
+        action={handleLeadGenForm}
         className="space-y-4 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto"
       >
         <div className="flex flex-col mb-4">
