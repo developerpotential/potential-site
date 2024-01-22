@@ -3,7 +3,7 @@ import React, { useState, FormEvent, useRef } from "react";
 import { handleLeadGenForm } from "@/(lead-gen)/SendLeadGenForm";
 import TextareaAutosize from "react-textarea-autosize";
 
-const SignUp: React.FC = () => {
+const LeadGen: React.FC = () => {
   const [isWaiting, setIsWaiting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -168,4 +168,4 @@ const SignUp: React.FC = () => {
   );
 };
 
-export default SignUp;
+export default LeadGen;

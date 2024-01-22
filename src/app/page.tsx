@@ -1,5 +1,5 @@
-import SignUp from "@/components/SignUp";
+import LeadGen from "@/components/LeadGen";
 
 export default function Home() {
-  return <SignUp />;
+  return <LeadGen />;
 }
