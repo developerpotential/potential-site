@@ -5,9 +5,9 @@ import NavBar from "@/components/NavBar";
 const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "GPT Career Coach",
+  title: "Potential",
   description:
-    "A friendly chatbot that can answer questions about your career.",
+    "AI that helps you find the ones who can help you reach your potential.",
 };
 
 export default async function RootLayout({
