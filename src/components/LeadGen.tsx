@@ -160,10 +160,10 @@ const LeadGen: React.FC = () => {
               </div>
             </div>
             {errorMessage && (
-              <div
-                className="relative mt-4 rounded border border-red-400 px-4 py-3 text-red-700"
-                role="alert"
-              >
+           <div
+              className="relative mt-8 px-8 text-red-400 sm:text-2xl "
+              role="alert"
+            >
                 <span className="block sm:inline">{errorMessage}</span>
               </div>
             )}
