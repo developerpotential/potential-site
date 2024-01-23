@@ -17,8 +17,10 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.className} flex flex-col`}>
-        <NavBar />
+      <body
+        className={`${nunitoSans.className} flex flex-col text-[#156669] bg-gradient-to-r from-[#DBE6F5] to-[#EDE9F0]`}
+      >
+        {/* <NavBar /> */}
 
         {children}
       </body>
